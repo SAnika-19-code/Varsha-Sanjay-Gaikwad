@@ -1,31 +1,171 @@
 <!doctype html>
-<html lang="en">
+<html lang="hi">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coming Soon</title>
-    <meta
-      name="description"
-      content="A clean placeholder website ready for future photos and videos."
-    >
+    <meta name="description" content="संघर्ष, परिवार, सेवा और साहस से बनी मेरी जीवन यात्रा।">
+    <meta name="theme-color" content="#172f2a">
+    <title>मेरी कथा | एक जीवन यात्रा</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <main class="page-shell">
-      <section class="intro" aria-labelledby="page-title">
-        <p class="eyebrow">Website in progress</p>
-        <h1 id="page-title">Coming Soon</h1>
-        <p class="summary">
-          This page is ready for future photos, videos, and project details.
+    <header class="hero">
+      <nav class="nav shell" aria-label="मुख्य नेविगेशन">
+        <a class="brand" href="#top" aria-label="मेरी कथा, होम">
+          <span class="brand-mark">MK</span>
+          <span>मेरी कथा</span>
+        </a>
+        <a class="nav-link" href="#gallery">चित्र यात्रा</a>
+      </nav>
+
+      <div class="hero-content shell" id="top">
+        <p class="eyebrow">साहस • परिवार • सेवा • विश्वास</p>
+        <h1>मैं गिरी जरूर,<br><em>लेकिन रुकी नहीं।</em></h1>
+        <p class="hero-copy">
+          गांव की मिट्टी और कबड्डी के मैदान से लेकर एक शिक्षिका, माँ,
+          AWWA परिवार की सदस्य और कैंसर से लड़कर आगे बढ़ी महिला तक—
+          यह मेरी जीवन यात्रा की चित्र कथा है।
         </p>
+        <a class="button" href="#gallery">मेरी यात्रा देखें <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <div class="hero-collage" aria-hidden="true">
+        <figure class="hero-photo hero-photo-main">
+          <img src="assets/fwc/DSC_0229.JPG" alt="">
+        </figure>
+        <figure class="hero-photo hero-photo-top">
+          <img src="assets/Sports/20260612093456_003.jpg.jpeg" alt="">
+        </figure>
+        <figure class="hero-photo hero-photo-bottom">
+          <img src="assets/School/Aqua_Power_HD_20161108_111808.jpg" alt="">
+        </figure>
+      </div>
+      <div class="scroll-note">मेरी कहानी <span></span></div>
+    </header>
+
+    <main>
+      <section class="opening shell" aria-labelledby="opening-title">
+        <div>
+          <p class="section-number">01 / मेरी पहचान</p>
+          <h2 id="opening-title">हर तस्वीर में<br>एक कहानी है</h2>
+        </div>
+        <div class="opening-copy">
+          <p class="lead">
+            मेरी पहचान सिर्फ मेरे संघर्ष नहीं हैं। मेरी पहचान वे लोग हैं
+            जिन्होंने हर मोड़ पर मेरा हाथ थामा।
+          </p>
+          <p>
+            मेरी माँ ने कर्तव्य सिखाया, पापा ने भरोसा, पति ने साथ निभाया,
+            बच्चों ने आगे बढ़ने की वजह दी और फौजी परिवार ने मुझे अपनी
+            क्षमताओं को पहचानने का मंच दिया।
+          </p>
+        </div>
       </section>
 
-      <section class="media-stage" aria-label="Future media area">
-        <div class="placeholder">
-          <span class="placeholder-mark" aria-hidden="true"></span>
-          <p>Photos and videos will be added here later.</p>
+      <section class="milestones" aria-label="जीवन के अध्याय">
+        <article class="milestone shell">
+          <div class="milestone-year">खिलाड़ी</div>
+          <div>
+            <h3>मिट्टी से नेशनल तक</h3>
+            <p>कबड्डी ने मुझे गिरकर उठना, अनुशासन और हार के बाद फिर मैदान में लौटना सिखाया।</p>
+          </div>
+        </article>
+        <article class="milestone shell">
+          <div class="milestone-year">शिक्षिका</div>
+          <div>
+            <h3>सीखना और सिखाना</h3>
+            <p>बेटी के विश्वास ने मुझे फिर पढ़ने की प्रेरणा दी और बच्चों के बीच मुझे एक नई पहचान मिली।</p>
+          </div>
+        </article>
+        <article class="milestone shell">
+          <div class="milestone-year">AWWA</div>
+          <div>
+            <h3>मेरा दूसरा परिवार</h3>
+            <p>मंच संचालन, कला, संस्कृति और साथ—इस परिवार ने मुझे आत्मविश्वास और आगे बढ़ने का अवसर दिया।</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="gallery-section shell" id="gallery" aria-labelledby="gallery-title">
+        <div class="gallery-heading">
+          <div>
+            <p class="section-number">02 / चित्र यात्रा</p>
+            <h2 id="gallery-title">यादों का<br>कोलाज</h2>
+          </div>
+          <p>किसी अध्याय को चुनें या पूरी यात्रा को एक साथ देखें। तस्वीर खोलने के लिए उस पर क्लिक करें।</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="गैलरी फिल्टर">
+          <button class="filter is-active" type="button" data-filter="all">सभी</button>
+          <button class="filter" type="button" data-filter="sports">खेल</button>
+          <button class="filter" type="button" data-filter="school">शिक्षा</button>
+          <button class="filter" type="button" data-filter="awwa">AWWA परिवार</button>
+          <button class="filter" type="button" data-filter="achievement">उपलब्धियाँ</button>
+          <button class="filter" type="button" data-filter="father">पापा की यादें</button>
+        </div>
+
+        <div class="gallery" id="photo-grid" aria-live="polite"></div>
+        <button class="load-more" id="load-more" type="button">और तस्वीरें देखें</button>
+      </section>
+
+      <section class="quote-section">
+        <div class="shell quote-inner">
+          <p class="quote-mark" aria-hidden="true">“</p>
+          <blockquote>
+            जिंदगी ने मुझे कई बार परखा, कई बार गिराया, कई बार रुलाया...
+            लेकिन हर बार मैंने खुद से एक ही बात कही—
+            <strong>मैं हार नहीं मानूँगी।</strong>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="closing shell">
+        <p class="section-number">03 / मेरा संदेश</p>
+        <div class="closing-grid">
+          <h2>हौसला मुश्किलों<br>से हमेशा बड़ा होता है।</h2>
+          <div>
+            <p>
+              अगर मेरी कहानी सुनकर किसी एक महिला को भी यह विश्वास मिले कि
+              मुश्किलें चाहे कितनी भी बड़ी क्यों न हों, उनसे बड़ा हमारा
+              हौसला होता है, तो मुझे लगेगा कि मेरी कहानी सफल हो गई।
+            </p>
+            <p class="signature">धन्यवाद। <strong>जय हिंद।</strong></p>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <p>मेरी कथा</p>
+        <p>परिवार, साहस और सेवा की एक चित्र यात्रा</p>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" type="button" aria-label="तस्वीर बंद करें">×</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="पिछली तस्वीर">‹</button>
+      <div class="lightbox-viewport">
+        <div class="lightbox-track">
+          <figure class="lightbox-slide" aria-hidden="true">
+            <img src="" alt="">
+            <figcaption></figcaption>
+          </figure>
+          <figure class="lightbox-slide">
+            <img id="lightbox-image" src="" alt="">
+            <figcaption id="lightbox-caption"></figcaption>
+          </figure>
+          <figure class="lightbox-slide" aria-hidden="true">
+            <img src="" alt="">
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </div>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="अगली तस्वीर">›</button>
+    </dialog>
   </body>
 </html>
